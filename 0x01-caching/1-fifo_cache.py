@@ -30,7 +30,7 @@ class FIFOCache(BaseCaching):
                 discarded_ele = self.keys_list[0]
                 self.cache_data.pop(discarded_ele, None)
                 del self.keys_list[0]
-                self.cache_data[key] = item
+
                 print("DISCARD: {}".format(discarded_ele))
 
             else:
