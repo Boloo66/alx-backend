@@ -12,8 +12,8 @@ class BasicCache(BaseCaching):
     def __init__(self):
         """ Constructor method
         """
-        super().__init__()
-        # BaseCaching.__init__(self)
+        # super().__init__()
+        BaseCaching.__init__(self)
 
     def put(self, key, item):
         """ Adds an item to cache
