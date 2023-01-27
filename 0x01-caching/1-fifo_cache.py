@@ -32,10 +32,8 @@ class FIFOCache(BaseCaching):
                 del self.keys_list[0]
 
                 print("DISCARD: {}".format(discarded_ele))
-
-            else:
-                self.cache_data[key] = item
-                self.keys_list.append(key)
+            self.cache_data[key] = item
+            self.keys_list.append(key)
 
     def get(self, key):
         """
