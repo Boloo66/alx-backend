@@ -2,8 +2,8 @@
 """ This module inherits from the basic cache module
 """
 
-from base_caching import BaseCaching
-#BaseCaching = __import__("base_caching").BaseCaching
+# from base_caching import BaseCaching
+BaseCaching = __import__("base_caching").BaseCaching
 
 
 class BasicCache(BaseCaching):
@@ -13,8 +13,8 @@ class BasicCache(BaseCaching):
     def __init__(self):
         """ Constructor method
         """
-        # super().__init__()
-        BaseCaching.__init__(self)
+        super().__init__()
+        # BaseCaching.__init__(self)
 
     def put(self, key, item):
         """ Adds an item to cache
