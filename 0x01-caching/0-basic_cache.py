@@ -13,12 +13,14 @@ class BasicCache(BaseCaching):
         """ Constructor method
         """
         super().__init__()
+        # BaseCaching.__init__(self)
 
     def put(self, key, item):
         """ Adds an item to cache
         """
-        if key is not None:
+        if key is not None or item is not None:
             self.cache_data[key] = item
+        pass
 
     def get(self, key):
         """ Returns a key to when called
